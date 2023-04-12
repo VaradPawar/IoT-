@@ -1,30 +1,33 @@
-# IoT-
 Cloud-based IoT System with Virtual Sensors
 
-This is a demo project that simulates a cloud-based IoT system that collects data from virtual sensors using MQTT protocol. The system consists of virtual environmental stations that periodically generate random sensor data values and publish them to an MQTT broker. The system also includes a simple web application that displays the latest sensor data values and the sensor data values received during the last five hours.
+This is a project for building a cloud-based IoT system that collects data from a set of virtual sensors using the MQTT protocol. The system will also have a simple web application to display the latest sensor data values and historical data values from all environmental stations.
 
-Requirements
+Virtual Sensors
 
-To run this project, you need:
-1. Python 3
-2. The virtual environmental Station
-3. Cloud-based IoT Backend
+The system uses standalone computer programs to represent virtual environment IoT stations that periodically generate a set of random virtual sensor values for the following sensors:
 
-Installation
+Temperature (Range: -50 to 50 Celsius)
+Humidity (Range: 0 to 100%)
+CO2 sensor (Range: 300ppm to 2000ppm)
+Rain height (Range: 0 to 50 mm/h)
+Wind direction (Range: 0 to 360 degrees)
+Wind intensity (Range: 0 to 100 m/s)
+Each virtual environmental station has a unique ID to publish the random sensor data values on an MQTT channel. At least two virtual stations are running and publishing their values on the MQTT channel.
 
-Clone this repository to your local machine.
-Install the required dependencies as described above.
-Start the MQTT broker. For this demo project, you can use the free broker provided by HiveMQ (https://www.hivemq.com/public-mqtt-broker/).
-Start the virtual sensors. In the virtual_sensor.py file, replace the sensor_id variable with a unique ID for each virtual sensor, and update the broker_address variable if needed. Then run the script using python virtual_sensor.py.
-Start the Flask web application. In the app.py file, update the broker_address variable if needed. Then run the script using python app.py.
-Access the web application at http://localhost:5000
+Cloud-based IoT Backend
 
-Usage
+The MQTT is controlled by a cloud-based backend. The following technologies can be used to implement the cloud-based backend:
 
-The web application displays two pages:
+AWS IoT
+Azure IoT
+Google IoT ThingsBoard
+Web Application
 
-Latest Sensor Data
-This page displays the latest sensor data values received from all the virtual sensors. The data is updated automatically every few seconds.
+The system has a simple web application that displays the latest sensor data values and historical data values from all environmental stations. The web application will have the following functionalities:
 
-Sensor Data History
-This page allows you to select a sensor and view the sensor data values received during the last five hours. The data is displayed in a line chart that is updated automatically every few seconds.
+Display the latest sensor data values received from all the sensors of a specified environmental station.
+Display the sensor data values received during the last five hours from all environmental stations of a specified sensor.
+
+Conclusion
+
+This project demonstrates how to build a cloud-based IoT system using virtual sensors and a web application to display the collected data. It provides a good starting point for building more complex IoT systems that can be used for monitoring and controlling various applications.
