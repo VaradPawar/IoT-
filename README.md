@@ -1,4 +1,4 @@
-Cloud-based IoT System with Virtual Sensors
+<h3> Cloud-based IoT System with Virtual Sensors </h3>
 
 This is a project for building a cloud-based IoT system that collects data from a set of virtual sensors using the MQTT protocol. The system will also have a simple web application to display the latest sensor data values and historical data values from all environmental stations.
 
