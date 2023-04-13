@@ -31,6 +31,6 @@ The dashboard displays the sensor data values received during the last five hour
 This project demonstrates how to build a cloud-based IoT system using virtual sensors. It provides a good starting point for building more complex IoT systems that can be used for monitoring and controlling various applications.
 
 
-<img width="468" alt="image" src="https://user-images.githubusercontent.com/47717859/231624756-5112ff18-bb3c-4991-b4a5-d46cbba0b0be.png">
+<img width="1468" alt="image" src="https://user-images.githubusercontent.com/47717859/231624756-5112ff18-bb3c-4991-b4a5-d46cbba0b0be.png">
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/47717859/231624644-9c1adfd9-5f7c-400e-8760-6ca5b1efcf72.png">
