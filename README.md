@@ -31,3 +31,8 @@ Display the sensor data values received during the last five hours from all envi
 Conclusion
 
 This project demonstrates how to build a cloud-based IoT system using virtual sensors and a web application to display the collected data. It provides a good starting point for building more complex IoT systems that can be used for monitoring and controlling various applications.
+
+
+<img width="1272" alt="Screenshot 2023-04-12 at 8 36 36 PM" src="https://user-images.githubusercontent.com/47717859/231624605-395b46b5-c2dc-4026-b1a1-7e5d6344a914.png">
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/47717859/231624644-9c1adfd9-5f7c-400e-8760-6ca5b1efcf72.png">
