@@ -7,11 +7,17 @@ This is a project for building a cloud-based IoT system that collects data from 
 The system uses standalone computer programs to represent virtual environment IoT stations that periodically generate a set of random virtual sensor values for the following sensors:
 
 Temperature (Range: -50 to 50 Celsius)
+
 Humidity (Range: 0 to 100%)
+
 CO2 sensor (Range: 300ppm to 2000ppm)
+
 Rain height (Range: 0 to 50 mm/h)
+
 Wind direction (Range: 0 to 360 degrees)
+
 Wind intensity (Range: 0 to 100 m/s)
+
 Each virtual environmental station has a unique ID to publish the random sensor data values on an MQTT channel. At least two virtual stations are running and publishing their values on the MQTT channel.
 
 <h3> Cloud-based IoT Backend </h3>
