@@ -19,10 +19,10 @@ Each virtual environmental station has a unique ID to publish the random sensor 
 
 The MQTT is controlled by a cloud-based backend. The following technologies can be used to implement the cloud-based backend:
 
-AWS IoT
-Azure IoT
-Google IoT 
-ThingsBoard
+1. AWS IoT
+2. Azure IoT
+3. Google IoT 
+4. ThingsBoard
 
 The dashboard displays the sensor data values received during the last five hours from all environmental stations of a specified sensor.
 
