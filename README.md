@@ -6,17 +6,12 @@ This is a project for building a cloud-based IoT system that collects data from 
 
 The system uses standalone computer programs to represent virtual environment IoT stations that periodically generate a set of random virtual sensor values for the following sensors:
 
-Temperature (Range: -50 to 50 Celsius)
-
-Humidity (Range: 0 to 100%)
-
-CO2 sensor (Range: 300ppm to 2000ppm)
-
-Rain height (Range: 0 to 50 mm/h)
-
-Wind direction (Range: 0 to 360 degrees)
-
-Wind intensity (Range: 0 to 100 m/s)
+1. Temperature (Range: -50 to 50 Celsius)
+2. Humidity (Range: 0 to 100%)
+3. CO2 sensor (Range: 300ppm to 2000ppm)
+4. Rain height (Range: 0 to 50 mm/h)
+5. Wind direction (Range: 0 to 360 degrees)
+6. Wind intensity (Range: 0 to 100 m/s)
 
 Each virtual environmental station has a unique ID to publish the random sensor data values on an MQTT channel. At least two virtual stations are running and publishing their values on the MQTT channel.
 
@@ -26,17 +21,14 @@ The MQTT is controlled by a cloud-based backend. The following technologies can 
 
 AWS IoT
 Azure IoT
-Google IoT ThingsBoard
-Web Application
+Google IoT 
+ThingsBoard
 
-The system has a simple web application that displays the latest sensor data values and historical data values from all environmental stations. The web application will have the following functionalities:
-
-Display the latest sensor data values received from all the sensors of a specified environmental station.
-Display the sensor data values received during the last five hours from all environmental stations of a specified sensor.
+The dashboard displays the sensor data values received during the last five hours from all environmental stations of a specified sensor.
 
  <h3> Conclusion </h3>
 
-This project demonstrates how to build a cloud-based IoT system using virtual sensors and a web application to display the collected data. It provides a good starting point for building more complex IoT systems that can be used for monitoring and controlling various applications.
+This project demonstrates how to build a cloud-based IoT system using virtual sensors. It provides a good starting point for building more complex IoT systems that can be used for monitoring and controlling various applications.
 
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/47717859/231624756-5112ff18-bb3c-4991-b4a5-d46cbba0b0be.png">
